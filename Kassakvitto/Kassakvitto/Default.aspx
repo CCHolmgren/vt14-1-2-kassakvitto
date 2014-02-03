@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Kassakvitto</title>
 </head>
 <body>
     <h1>Kassakvitto</h1>
@@ -13,7 +13,7 @@
         <asp:Label Text="Total köpsumma" runat="server" />
     </div>
     <div>
-        <asp:TextBox runat="server" ID="InputBox" /> kr
+        <asp:TextBox runat="server" ID="InputBox" Text="Köpsumma"/> kr
         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="InputBox" ErrorMessage="RequiredFieldValidator" EnableClientScript="true"></asp:RequiredFieldValidator>
         <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToValidate="InputBox" ErrorMessage="CompareValidator"  Type="Double" Operator="DataTypeCheck" EnableClientScript="true"></asp:CompareValidator>
     </div>
@@ -28,5 +28,6 @@
             <div><asp:Label Text="Att betala" runat="server" /><asp:Label Text="" runat="server" /></div>
         </asp:Panel>
     </form>
+    <script src="Main.js"></script>
 </body>
 </html>
