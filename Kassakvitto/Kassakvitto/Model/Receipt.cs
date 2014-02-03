@@ -8,6 +8,7 @@ namespace Kassakvitto
     public class Receipt
     {
         double _subtotal;
+
         public double DiscountRate
         {
             get;
