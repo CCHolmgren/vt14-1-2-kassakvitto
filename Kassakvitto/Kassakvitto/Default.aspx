@@ -22,10 +22,10 @@
         <asp:Button ID="SendButton" Text="Beräkna rabatt" runat="server" OnClick="SendButton_Click" />
     </div>
         <asp:Panel ID="Kvitto" runat="server" Visible="false" CssClass="receiptcontainer">
-            <div><asp:Label Text="Totalt" runat="server" /><asp:Label runat="server" ID="Total" CssClass="right"/></div>
-            <div><asp:Label Text="Rabattsats" runat="server" /><asp:Label runat="server" ID="Rabattsats" CssClass="right"/></div>
-            <div><asp:Label Text="Rabatt" runat="server" /><asp:Label runat="server" ID="Rabatt" CssClass="right"/></div>
-            <div><asp:Label Text="Att betala" runat="server" /><asp:Label runat="server" ID="Pay" CssClass="right"/></div>
+            <div class="receiptitem"><asp:Label Text="Totalt" runat="server" /><asp:Label runat="server" ID="Total" CssClass="right"/></div>
+            <div class="receiptitem"><asp:Label Text="Rabattsats" runat="server" /><asp:Label runat="server" ID="Rabattsats" CssClass="right"/></div>
+            <div class="receiptitem"><asp:Label Text="Rabatt" runat="server" /><asp:Label runat="server" ID="Rabatt" CssClass="right"/></div>
+            <div class="receiptitem"><asp:Label Text="Att betala" runat="server" /><asp:Label runat="server" ID="Pay" CssClass="right"/></div>
         </asp:Panel>
     </form>
     <script src="Main.js"></script>

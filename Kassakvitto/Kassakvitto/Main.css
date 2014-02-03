@@ -4,6 +4,11 @@
     float:right;
 }
 .receiptcontainer{
+    background-color: #efefef;
+    border:1px solid black;
     width:40%;
-    max-width:300px;
+    max-width:200px;
+}
+.receiptitem{
+    margin:4px;
 }
