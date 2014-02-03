@@ -14,8 +14,8 @@
     </div>
     <div>
         <asp:TextBox runat="server" ID="InputBox" /> kr
-        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="InputBox" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
-        <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToValidate="InputBox" ErrorMessage="CompareValidator"  Type="Double" Operator="DataTypeCheck"></asp:CompareValidator>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="InputBox" ErrorMessage="RequiredFieldValidator" EnableClientScript="true"></asp:RequiredFieldValidator>
+        <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToValidate="InputBox" ErrorMessage="CompareValidator"  Type="Double" Operator="DataTypeCheck" EnableClientScript="true"></asp:CompareValidator>
     </div>
     <div>
         <asp:Button Text="Beräkna rabatt" runat="server" />
