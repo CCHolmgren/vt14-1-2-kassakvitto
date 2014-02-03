@@ -18,14 +18,14 @@
         <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToValidate="InputBox" ErrorMessage="CompareValidator"  Type="Double" Operator="DataTypeCheck" EnableClientScript="true"></asp:CompareValidator>
     </div>
     <div>
-        <asp:Button Text="Beräkna rabatt" runat="server" OnClick="Unnamed2_Click" />
+        <asp:Button ID="SendButton" Text="Beräkna rabatt" runat="server" OnClick="SendButton_Click" />
     </div>
         <asp:ValidationSummary ID="ValidationSummary1" runat="server" />
-        <asp:Panel runat="server">
-            <div><asp:Label Text="Totalt" runat="server" /><asp:Label Text="" runat="server" /></div>
-            <div><asp:Label Text="Rabattsats" runat="server" /><asp:Label Text="" runat="server" /></div>
-            <div><asp:Label Text="Rabatt" runat="server" /><asp:Label Text="" runat="server" /></div>
-            <div><asp:Label Text="Att betala" runat="server" /><asp:Label Text="" runat="server" /></div>
+        <asp:Panel ID="Kvitto" runat="server" Visible="false">
+            <div><asp:Label Text="Totalt" runat="server" /><asp:Label Text="" runat="server" ID="Total"/></div>
+            <div><asp:Label Text="Rabattsats" runat="server" /><asp:Label Text="" runat="server" ID="Rabattsats"/></div>
+            <div><asp:Label Text="Rabatt" runat="server" /><asp:Label Text="" runat="server" ID="Rabatt"/></div>
+            <div><asp:Label Text="Att betala" runat="server" /><asp:Label Text="" runat="server" ID="Pay"/></div>
         </asp:Panel>
     </form>
     <script src="Main.js"></script>

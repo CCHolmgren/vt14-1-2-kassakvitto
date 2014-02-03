@@ -50,7 +50,7 @@ namespace Kassakvitto
 
             MoneyOff = subtotal * (DiscountRate / 100);
             Subtotal = subtotal;
-            Total = subtotal;
+            Total = subtotal - MoneyOff;
         }
         public Receipt(double subtotal)
         {
