@@ -1,0 +1,9 @@
+﻿body {
+}
+.right{
+    float:right;
+}
+.receiptcontainer{
+    width:40%;
+    max-width:300px;
+}

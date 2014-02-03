@@ -5,6 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Kassakvitto</title>
+    <link href="Main.css" rel="stylesheet" />
 </head>
 <body>
     <h1>Kassakvitto</h1>
@@ -20,11 +21,11 @@
     <div>
         <asp:Button ID="SendButton" Text="Beräkna rabatt" runat="server" OnClick="SendButton_Click" />
     </div>
-        <asp:Panel ID="Kvitto" runat="server" Visible="false">
-            <div><asp:Label Text="Totalt" runat="server" /><asp:Label Text="" runat="server" ID="Total"/></div>
-            <div><asp:Label Text="Rabattsats" runat="server" /><asp:Label Text="" runat="server" ID="Rabattsats"/></div>
-            <div><asp:Label Text="Rabatt" runat="server" /><asp:Label Text="" runat="server" ID="Rabatt"/></div>
-            <div><asp:Label Text="Att betala" runat="server" /><asp:Label Text="" runat="server" ID="Pay"/></div>
+        <asp:Panel ID="Kvitto" runat="server" Visible="false" CssClass="receiptcontainer">
+            <div><asp:Label Text="Totalt" runat="server" /><asp:Label runat="server" ID="Total" CssClass="right"/></div>
+            <div><asp:Label Text="Rabattsats" runat="server" /><asp:Label runat="server" ID="Rabattsats" CssClass="right"/></div>
+            <div><asp:Label Text="Rabatt" runat="server" /><asp:Label runat="server" ID="Rabatt" CssClass="right"/></div>
+            <div><asp:Label Text="Att betala" runat="server" /><asp:Label runat="server" ID="Pay" CssClass="right"/></div>
         </asp:Panel>
     </form>
     <script src="Main.js"></script>
