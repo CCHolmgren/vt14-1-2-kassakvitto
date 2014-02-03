@@ -14,7 +14,7 @@
         <asp:Label Text="Total köpsumma" runat="server" />
     </div>
     <div>
-        <asp:TextBox runat="server" ID="InputBox" Text="Köpsumma"/> kr
+        <asp:TextBox runat="server" ID="InputBox" Text="Köpsumma" CssClass="alignright"/> kr
         <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToValidate="InputBox" ErrorMessage="Ange en total köpesumma större än 0."  Type="Double" Operator="GreaterThan" EnableClientScript="true" Display="Dynamic" ForeColor="Red" ValueToCompare="0"></asp:CompareValidator>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="InputBox" ErrorMessage="Ange en total köpesumma." EnableClientScript="true" Display="Dynamic" ForeColor="Red"></asp:RequiredFieldValidator>
     </div>
