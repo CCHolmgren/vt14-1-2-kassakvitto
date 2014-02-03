@@ -22,10 +22,20 @@
         <asp:Button ID="SendButton" Text="Beräkna rabatt" runat="server" OnClick="SendButton_Click" />
     </div>
         <asp:Panel ID="Kvitto" runat="server" Visible="false" CssClass="receiptcontainer">
-            <div class="receiptitem"><asp:Label Text="Totalt" runat="server" /><asp:Label runat="server" ID="Total" CssClass="right"/></div>
-            <div class="receiptitem"><asp:Label Text="Rabattsats" runat="server" /><asp:Label runat="server" ID="Rabattsats" CssClass="right"/></div>
-            <div class="receiptitem"><asp:Label Text="Rabatt" runat="server" /><asp:Label runat="server" ID="Rabatt" CssClass="right"/></div>
-            <div class="receiptitem"><asp:Label Text="Att betala" runat="server" /><asp:Label runat="server" ID="Pay" CssClass="right"/></div>
+            <div class="receiptitem">
+                <h2 class="companyname">Företagsnamn</h2>
+                <p class="information">Telefonnummer: 0772-28 80 00</p>
+                <p class="information">Öppetider 8-16</p>
+            </div>
+            <hr class="dottedhr" />
+            <div class="receiptitem"><asp:Label Text="Totalt" runat="server" CssClass="information" /><asp:Label runat="server" ID="Total" CssClass="right information"/></div>
+            <div class="receiptitem"><asp:Label Text="Rabattsats" runat="server" CssClass="information" /><asp:Label runat="server" ID="Rabattsats" CssClass="right information"/></div>
+            <div class="receiptitem"><asp:Label Text="Rabatt" runat="server" CssClass="information" /><asp:Label runat="server" ID="Rabatt" CssClass="right information"/></div>
+            <div class="receiptitem"><asp:Label Text="Att betala" runat="server" CssClass="information" /><asp:Label runat="server" ID="Pay" CssClass="right information"/></div>
+            <hr class="dottedhr" />
+            <div class="companyname">
+                <p>Välkommen åter!</p>
+            </div>
         </asp:Panel>
     </form>
     <script src="Main.js"></script>

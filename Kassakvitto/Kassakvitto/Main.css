@@ -1,14 +1,25 @@
 ﻿body {
 }
-.right{
+.right {
     float:right;
 }
-.receiptcontainer{
+.receiptcontainer {
     background-color: #efefef;
     border:1px solid black;
     width:40%;
     max-width:200px;
 }
-.receiptitem{
+.receiptitem {
     margin:4px;
+}
+.dottedhr {
+    width: 85%;
+    border-top-style:dashed;
+}
+.companyname {
+    text-align:center;
+
+}
+.information {
+    font-size: 12px;
 }
